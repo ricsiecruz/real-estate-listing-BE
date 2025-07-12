@@ -5,7 +5,7 @@ const {
   getListings,
 } = require("../controllers/listingsController");
 
-router.get("/", getListings);
-router.post("/", createListing);
+router.get("/get-listings", getListings);
+router.post("/create-listing", createListing);
 
 module.exports = router;

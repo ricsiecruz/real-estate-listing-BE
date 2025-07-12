@@ -6,10 +6,10 @@ const validateListing = (data) => {
     city,
     size,
     tcp,
-    downPaymentPercent,
+    downpaymentPercent,
     payableUpToYears,
     occupancy,
-    modeOfPyament,
+    modeOfPayment,
     lister,
     contact,
   } = data;
@@ -24,10 +24,10 @@ const validateListing = (data) => {
     }
     if (
       !tcp ||
-      !downPaymentPercent ||
+      !downpaymentPercent ||
       !payableUpToYears ||
       !occupancy ||
-      !modeOfPyament
+      !modeOfPayment
     ) {
       return "Required";
     }

@@ -1,4 +1,4 @@
-const pool = require("../scripts/db");
+const pool = require("../db/pool");
 const { validateListing } = require("../utils/validator");
 
 const createListing = async (req, res) => {
@@ -14,12 +14,14 @@ const createListing = async (req, res) => {
     city,
     size,
     tcp,
-    downPaymentPercent,
+    downpaymentPercent,
     payableUpToYears,
     occupancy,
-    modeOfPyament,
+    modeOfPayment,
     lister,
     contact,
+    houseRooms,
+    condoType,
   } = req.body;
 
   try {
